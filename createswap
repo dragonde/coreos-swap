@@ -1,5 +1,4 @@
-# swith to sudo
-sudo -i
+# ejecutar con sudo
  
 # create swap
 touch /2GiB.swap
@@ -13,7 +12,7 @@ sysctl vm.swappiness=10
 sysctl vm.vfs_cache_pressure=50
 
 #cat /proc/sys/vm/swappiness
-# modificar /etc/sysctl.conf
+# modificar /etc/sysctl.conf?
 
 cp -av swap.service /etc/systemd/system
 
