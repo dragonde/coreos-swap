@@ -11,6 +11,9 @@ mkswap /2GiB.swap
 
 echo "vm.swappiness=5"  > /etc/sysctl.d/50-vm-settings.conf 
 echo "vm.vfs_cache_pressure=90" >> /etc/sysctl.d/50-vm-settings.conf
+sysctl vm.swappiness=5
+sysctl vm.vfs_cache_pressure=90
+
 
 #cat /proc/sys/vm/swappiness
 
